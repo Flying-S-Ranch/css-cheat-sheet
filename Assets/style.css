@@ -1,8 +1,47 @@
 * {
     padding:0;
     margin:0;
-}
-body {
     /* This is the wireframe design */
-    margin: 1px solid red;
+    border: 1px solid red;
+}
+
+:root {
+    --bright: rgb(186, 30, 229);
+    --light: lightgray;
+    --dark: rgb(52, 52, 52);
+}
+
+header{
+    height: 100px;
+    max-width: 600px;
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header p {
+    color: var(--light);
+    font-family: sans-serif;
+}
+
+.header {
+    
+}
+
+body {
+    background-color: var(--dark);
+}
+
+
+
+h1, h2 {
+    font-family: sans-serif;
+    color: var(--bright);
+}
+
+main {
+    min-height: 80vh;
 }
