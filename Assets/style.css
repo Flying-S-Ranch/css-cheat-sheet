@@ -1,14 +1,15 @@
 * {
     padding:0;
     margin:0;
+    box-sizing: border-box;
     /* This is the wireframe design */
     border: 1px solid red;
 }
 
 :root {
-    --bright: rgb(186, 30, 229);
+    --bright: rgb(179, 86, 184);
     --light: lightgray;
-    --dark: rgb(52, 52, 52);
+    --dark: rgb(67, 68, 71);
 }
 
 body {
@@ -39,15 +40,28 @@ h1, h2 {
 }
 
 h1{
-    font-size: 200%;
+    font-size: 250%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
 }
 
 h2{
-    max-width: 250px;
-    font-size: 150%;
+    max-width: 300px;
+    font-size: 175%;
     padding: 5px;
     border: var(--light) 3px solid;
     border-radius: 5px;
+}
+
+.card {
+    min-width: 32%;
+    border: var(--light) 3px dashed;
+    padding: 5px;
 }
 
 main {
@@ -56,4 +70,32 @@ main {
 
 .content {
     color: var(--light);
+    background-color: var(--bright);
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 300px;
+}
+
+.card p {
+    color: var(--bright);
+    font-size: 100%;
+    padding: 5px 0;
+    font-family: sans-serif;
+    line-height: 150%;
+}
+
+code {
+    font-size: 100%;
+}
+
+@media screen and (max-width:992px) {
+    .card {
+        min-width:50%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .card {
+        min-width:100%;
+    }
 }
