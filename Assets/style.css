@@ -11,6 +11,11 @@
     --dark: rgb(52, 52, 52);
 }
 
+body {
+    background-color: var(--dark);
+    font-size: 16px;
+}
+
 header{
     height: 100px;
     max-width: 600px;
@@ -25,23 +30,26 @@ header{
 header p {
     color: var(--light);
     font-family: sans-serif;
+    font-size: 100%;
 }
-
-.header {
-    
-}
-
-body {
-    background-color: var(--dark);
-}
-
-
 
 h1, h2 {
     font-family: sans-serif;
     color: var(--bright);
 }
 
+h1{
+    font-size: 200%;
+}
+
+h2{
+    font-size: 150%;
+}
+
 main {
     min-height: 80vh;
+}
+
+.content {
+    color: var(--light);
 }
